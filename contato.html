@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-</head>
-<body>
-    <ul>
-        <li>
-            <a href="index.html"> Home </a>
-        </li>
-        <li>
-            <a href="contato.html"> Contato </a>
-        </li>
-    </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato - Desyrre</title>
+        <link rel="stylesheet" href="./assets/style/style.css" />
+    </head>
 
-    <h1>Entre em contato comigo</h1>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato </a>
+                </li>
+            </ul>
+        </nav>
 
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome"> 
-        <br>
-        <br>
-        <label for="email">E-mail:</label> <br>
-        <input type="email" id="email"> 
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+            <main>
+                <div class="contactPageInfo">
+                    <h1>Entre em contato comigo</h1>
+                </div>
 
-    <h2>Endereço:</h2>
+                <section class="form">
+                    <div>
+                    <form>
+                        <div>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" onkeyup="nameValidation()" />
+                            <div id="txtName"></div>
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" onkeyup="emailValidationSymbol()" />
+                            <div id="txtEmail"></div>
+                        </div>
+                        <div>
+                            <label for="subject">Assunto:</label>
+                            <textarea
+                            name="subject"
+                            id="subject"
+                            rows="5"
+                            onkeyup="subjectValidation()"
+                            ></textarea>
+                            <div id="txtSubject"></div>
+                        </div>
+                        <button onclick="submitForm()">Enviar</button>
+                    </form>
+                </div>
+            </section>
 
-    <p>Alameda Terraço Sempre Verde, 742</p>
-    <p>Springfield - Unknown State</p>
+            <section class="map">
+                <div class="addressTitle">
+                    <h2>Endereço:</h2>
+                </div>
+                <div class="addressText">
+                    <p>Alameda Terraço Sempre Verde, 742</p>
+                    <p>Springfield - Unknown State</p>
+                </div>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.36232622498!2d-118.35588102275915!3d34.
+                        1370712731251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2be4f253238cf%3A0xd3dd5027799c9a71!2s
+                        Universal%20Studios%20Hollywood!5e0!3m2!1spt-BR!2sbr!4v1718631760514!5m2!1spt-BR!2sbr" 
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        id="mapa"
+                        onmouseover="mapaZoom()" 
+                        onmouseout="mapaNormal()"
+                </div>
+            </section>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.36232622498!2d-118.35588102275915!3d34.
-    1370712731251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2be4f253238cf%3A0xd3dd5027799c9a71!2s
-    Universal%20Studios%20Hollywood!5e0!3m2!1spt-BR!2sbr!4v1718631760514!5m2!1spt-BR!2sbr" 
-    width="600" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-</body>
+            <section class="footerContact">
+                <div class="footerTextContact">
+                    <h3>Página desenvolvida por Desyrre Barbosa</h3>
+                    <h5>2024</h5>
+                    <a href="github.com/ddesyrre"> Veja mais no meu Github </a>
+                </div>
+            </section>
+        </main>
+        <script src="./assets/js/script.js"></script>
+
+    </body>
 </html>
