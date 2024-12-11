@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Pagina</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
 </head>
 <body>
-    <ul>
+    <nav>
+        <ul>
         <li>
             <a href="index.html"> Home </a>
         </li>
@@ -14,34 +16,87 @@
             <a href="contato.html"> Contato </a>
         </li>
     </ul>
+    </nav>
     
-    <h1>Sobre a Desyrre</h1>
+    <main>
+        <section class="about">
+            <div class="pageTitle">
+                <h1>Sobre a Desyrre</h1>
+            </div>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Ipsam id reiciendis, iste suscipit eveniet dolorum ipsum 
-        officiis harum quos eum repellat possimus sit nihil 
-        perferendis obcaecati excepturi, provident dolorem fuga.
-    </p>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Magni sapiente sint sed saepe aut, voluptas iste placeat 
-        natus eveniet quaerat eos consequatur, odit hic alias 
-        expedita et a distinctio quidem.
-    </p>
+            <div class="photo">
+                <img src="https://avatars.githubusercontent.com/u/86036550?v=4" alt="Foto de Desyrre">
+            </div>
 
-    <img src="https://avatars.githubusercontent.com/u/86036550?v=4" alt="Foto de Desyrre">
+            <article class="content">            
+                <div class="paragrafoUm">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsam id reiciendis, iste suscipit eveniet dolorum ipsum 
+                        officiis harum quos eum repellat possimus sit nihil 
+                        perferendis obcaecati excepturi, provident dolorem fuga.
+                    </p>
 
-    <h2>Meu vídeo predileto:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Magni sapiente sint sed saepe aut, voluptas iste placeat 
+                        natus eveniet quaerat eos consequatur, odit hic alias 
+                        expedita et a distinctio quidem.
+                    </p>
+                </div>        
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gL2MsEbrtgI?si=6chFpexxzBRVJ8ln" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-    picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
+                <div class="paragrafoDois">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsam id reiciendis, iste suscipit eveniet dolorum ipsum 
+                        officiis harum quos eum repellat possimus sit nihil 
+                        perferendis obcaecati excepturi, provident dolorem fuga.
+                    </p>
 
-</body>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Magni sapiente sint sed saepe aut, voluptas iste placeat 
+                        natus eveniet quaerat eos consequatur, odit hic alias 
+                        expedita et a distinctio quidem.
+                    </p>
+                </div>   
+                
+            </article>
+        </section>
+
+        <section class="videoFav">
+            <div class="videoFavTitle">
+                <h2>Meu vídeo predileto:</h2>
+            </div>
+            <div class="videoFavText">
+                <p>
+                    Pessoas felizes. Uma das melhores músicas existentes. EWF.
+                </p>
+            </div>
+        </section>
+
+        <section class="videoContainer">    
+            
+            <div>
+                <iframe 
+                    width="560" height="315" src="https://www.youtube.com/embed/gL2MsEbrtgI?si=6chFpexxzBRVJ8ln" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footerText">
+                <h3>Página desenvolvida por Desyrre Barbosa</h3>
+                <h4>2024</h4>
+                <a href="github.com/ddesyrre"> Veja mais no meu Github </a>
+            </div>
+        </section>
+    </main>
+    </body>
 </html>
